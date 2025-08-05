@@ -54,7 +54,7 @@ def generate_readme_content():
         if heading:
             # Create the table row
             link = f"[Link](./days/{file_path.name})"
-            readme_content += f"| {day_number} | {heading} | [x] {link} |\n"
+            readme_content += f"| {day_number} | {heading} | [X] {link} |\n"
         else:
             print(f"Warning: Could not extract heading from {file_path}")
     
