@@ -42,7 +42,7 @@ def generate_readme_content():
     md_files.sort(key=lambda x: x.name)
     
     # Start building the README content
-    readme_content = "# Daily Dose of KodeKloud\n\n"
+    readme_content = "# 100 Days of DevOps [KodeKloud]\n\n"
     readme_content += "|Days|Task|Solved|\n"
     readme_content += "|---|---|---|\n"
     
@@ -53,7 +53,7 @@ def generate_readme_content():
         
         if heading:
             # Create the table row
-            link = f"[Link](./{file_path.name})"
+            link = f"[Link](./days/{file_path.name})"
             readme_content += f"| {day_number} | {heading} | [x] {link} |\n"
         else:
             print(f"Warning: Could not extract heading from {file_path}")
@@ -62,7 +62,7 @@ def generate_readme_content():
 
 def update_readme():
     """Update the README.md file in the days directory."""
-    readme_path = Path('days/README.md')
+    readme_path = Path('README.md')
     
     try:
         # Generate new content
