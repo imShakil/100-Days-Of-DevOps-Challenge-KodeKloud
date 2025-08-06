@@ -1,5 +1,11 @@
 # 100 Days of DevOps [KodeKloud]
 
+This repository contains solutions for the 100 Days of DevOps challenge.
+
+Wanna start yourself: https://linkly.link/2CeSH
+
+## Table of Contents
+
 |Days|Task|Solved|
 |---|---|---|
 | 001 | Linux User Setup with Non-interactive Shell | [Link](./days/001.md) |
