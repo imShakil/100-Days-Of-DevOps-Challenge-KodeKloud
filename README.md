@@ -2,8 +2,8 @@
 
 |Days|Task|Solved|
 |---|---|---|
-| 001 | Day1: Linux User Setup with Non-interactive Shell | [Link](./days/001.md) |
-| 002 | Day2: Temporary User Setup with Expiry Date | [Link](./days/002.md) |
+| 001 | Linux User Setup with Non-interactive Shell | [Link](./days/001.md) |
+| 002 | Temporary User Setup with Expiry Date | [Link](./days/002.md) |
 | 003 | Secure SSH Root Access | [Link](./days/003.md) |
 | 004 | Script Execute Permissions | [Link](./days/004.md) |
 | 005 | Install and Configuration Selinux | [Link](./days/005.md) |
