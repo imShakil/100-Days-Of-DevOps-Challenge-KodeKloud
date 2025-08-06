@@ -13,3 +13,4 @@
 | 009 | Debugging MariaDB Issues | [Link](./days/009.md) |
 | 010 | Create a BASH Script | [Link](./days/010.md) |
 | 011 | Install and Setup Tomcat Server | [Link](./days/011.md) |
+| 012 | Linux Network Services | [Link](./days/012.md) |
