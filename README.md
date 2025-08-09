@@ -22,3 +22,4 @@ Wanna start yourself: https://linkly.link/2CeSH
 | 012 | Linux Network Services | [Link](./days/012.md) |
 | 013 | IPtables Installation And Configuration | [Link](./days/013.md) |
 | 014 | Linux Process Troubleshooting | [Link](./days/014.md) |
+| 015 | Setup SSL for NGINX | [Link](./days/015.md) |
