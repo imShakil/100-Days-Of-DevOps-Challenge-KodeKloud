@@ -25,3 +25,4 @@ Wanna start yourself: https://linkly.link/2CeSH
 | 015 | Setup SSL for NGINX | [Link](./days/015.md) |
 | 016 | Install and Configure NGINX as Load Balancer | [Link](./days/016.md) |
 | 017 | Install and Configure PostgreSQL | [Link](./days/017.md) |
+| 018 | Configure LAMP Server (LAMP Stack) | [Link](./days/018.md) |
