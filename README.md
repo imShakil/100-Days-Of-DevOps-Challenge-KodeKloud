@@ -2,7 +2,7 @@
 
 This repository contains solutions for the 100 Days of DevOps challenge.
 
-Wanna start yourself: https://linkly.link/2CeSH
+> Wanna start yourself? Follow this [reference link](https://linkly.link/2CeSH). It will give me a small gift of kodekloud points. 
 
 ## Table of Contents
 
