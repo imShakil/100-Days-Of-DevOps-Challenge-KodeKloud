@@ -44,7 +44,7 @@ def generate_readme_content():
     # Start building the README content
     readme_content = "# 100 Days of DevOps [KodeKloud]\n\n"
     readme_content += "This repository contains solutions for the 100 Days of DevOps challenge.\n\n"
-    readme_content += "Wanna start yourself: https://linkly.link/2CeSH\n\n"
+    readme_content += "> Wanna start yourself? Follow this [reference link](https://linkly.link/2CeSH). It will give me a small gift of kodekloud points. \n\n"
     readme_content += "## Table of Contents\n\n"
     readme_content += "|Days|Task|Solved|\n"
     readme_content += "|---|---|---|\n"
