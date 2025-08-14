@@ -27,3 +27,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 017 | Install and Configure PostgreSQL | [Link](./days/017.md) |
 | 018 | Configure LAMP Server (LAMP Stack) | [Link](./days/018.md) |
 | 019 | Install and Configure Web Application | [Link](./days/019.md) |
+| 020 | Configure Nginx + PHP-FPM Using Unix Sock | [Link](./days/020.md) |
