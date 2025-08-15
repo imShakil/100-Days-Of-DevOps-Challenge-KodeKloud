@@ -28,3 +28,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 018 | Configure LAMP Server (LAMP Stack) | [Link](./days/018.md) |
 | 019 | Install and Configure Web Application | [Link](./days/019.md) |
 | 020 | Configure Nginx + PHP-FPM Using Unix Sock | [Link](./days/020.md) |
+| 021 | Setup Git Repository on Server | [Link](./days/021.md) |
