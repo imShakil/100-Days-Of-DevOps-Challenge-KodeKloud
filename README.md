@@ -30,3 +30,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 020 | Configure Nginx + PHP-FPM Using Unix Sock | [Link](./days/020.md) |
 | 021 | Setup Git Repository on Server | [Link](./days/021.md) |
 | 022 | Clone Git Repository | [Link](./days/022.md) |
+| 023 | Fork a repository | [Link](./days/023.md) |
