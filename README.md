@@ -32,3 +32,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 022 | Clone Git Repository | [Link](./days/022.md) |
 | 023 | Fork a repository | [Link](./days/023.md) |
 | 024 | Git Branch Create | [Link](./days/024.md) |
+| 025 | Git Branch Merge | [Link](./days/025.md) |
