@@ -35,3 +35,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 025 | Git Branch Merge | [Link](./days/025.md) |
 | 026 | Git Manage Remotes | [Link](./days/026.md) |
 | 027 | Git Revert Some Changes | [Link](./days/027.md) |
+| 028 | Git Cherry Pick | [Link](./days/028.md) |
