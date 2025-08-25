@@ -38,3 +38,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 028 | Git Cherry Pick | [Link](./days/028.md) |
 | 029 | Git Pull Request | [Link](./days/029.md) |
 | 030 | Git Reset Hard | [Link](./days/030.md) |
+| 031 | Git Stash | [Link](./days/031.md) |
