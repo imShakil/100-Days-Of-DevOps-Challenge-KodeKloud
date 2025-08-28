@@ -40,3 +40,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 030 | Git Reset Hard | [Link](./days/030.md) |
 | 031 | Git Stash | [Link](./days/031.md) |
 | 032 | Git Rebase | [Link](./days/032.md) |
+| 033 | Git Merge Conflict Resolve | [Link](./days/033.md) |
