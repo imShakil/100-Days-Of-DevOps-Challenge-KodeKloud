@@ -42,3 +42,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 032 | Git Rebase | [Link](./days/032.md) |
 | 033 | Git Merge Conflict Resolve | [Link](./days/033.md) |
 | 034 | Configure Git Hook | [Link](./days/034.md) |
+| 035 | Setup Docker Installation | [Link](./days/035.md) |
