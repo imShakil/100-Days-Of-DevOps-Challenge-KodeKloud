@@ -43,3 +43,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 033 | Git Merge Conflict Resolve | [Link](./days/033.md) |
 | 034 | Configure Git Hook | [Link](./days/034.md) |
 | 035 | Setup Docker Installation | [Link](./days/035.md) |
+| 036 | Run a NGINX Container on Docker | [Link](./days/036.md) |
