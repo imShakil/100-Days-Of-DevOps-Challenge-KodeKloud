@@ -49,3 +49,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 039 | Create a Docker Image From a Container | [Link](./days/039.md) |
 | 040 | Docker Execution | [Link](./days/040.md) |
 | 041 | Create a Docker File | [Link](./days/041.md) |
+| 042 | Create Docker Network | [Link](./days/042.md) |
