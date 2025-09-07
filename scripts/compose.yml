@@ -1,0 +1,9 @@
+services:
+  httpd:
+    image: httpd:latest
+    container_name: httpd
+    ports:
+      - 3003:80
+    volumes:
+      - /opt/itadmin/:/usr/local/apache2/htdocs
+    
