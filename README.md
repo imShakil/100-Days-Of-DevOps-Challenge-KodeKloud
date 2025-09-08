@@ -52,3 +52,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 042 | Create Docker Network | [Link](./days/042.md) |
 | 043 | Docker Ports Mapping | [Link](./days/043.md) |
 | 044 | Creating a Docker Compose File | [Link](./days/044.md) |
+| 045 | Resolve Dockerfile Issues | [Link](./days/045.md) |
