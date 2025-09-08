@@ -1,0 +1,27 @@
+#!/bin/bash
+# Pre-push hook to ensure README.md is up to date before pushing
+
+echo "Pre-push: Checking if README.md is up to date..."
+
+# Run the update script to generate current content
+python3 update_readme.py > /dev/null 2>&1
+
+# Check if README.md differs from what it should be
+if ! git diff --quiet README.md 2>/dev/null; then
+    echo "ERROR: README.md is not up to date!"
+    echo "The following changes need to be committed:"
+    echo "----------------------------------------"
+    git diff README.md
+    echo "----------------------------------------"
+    echo ""
+    echo "Please run the following commands to update:"
+    echo "  python3 update_readme.py"
+    echo "  git add README.md"
+    echo "  git commit -m 'Update README.md'"
+    echo ""
+    echo "Push aborted."
+    exit 1
+fi
+
+echo "README.md is up to date. Proceeding with push..."
+exit 0

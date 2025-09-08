@@ -1,0 +1,22 @@
+#!/bin/bash
+# Pre-commit hook to automatically update README.md when days/*.md files are modified
+
+# Check if any files in the days/ directory are being committed
+if git diff --cached --name-only | grep -q "^days/.*\.md$"; then
+    echo "Detected changes in days/ directory. Updating README.md..."
+    
+    # Run the update script
+    python3 update_readme.py
+    
+    # Check if README.md was modified
+    if [ -f "README.md" ]; then
+        # Add the updated README.md to the commit
+        git add README.md
+        echo "README.md has been updated and added to the commit."
+    else
+        echo "Warning: README.md was not found or could not be updated."
+        exit 1
+    fi
+fi
+
+exit 0

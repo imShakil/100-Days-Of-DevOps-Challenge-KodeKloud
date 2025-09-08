@@ -1,0 +1,22 @@
+#!/bin/bash
+# Post-commit hook to update README.md after committing changes to days/*.md files
+
+# Check if the last commit included any files in the days/ directory
+if git diff-tree --no-commit-id --name-only -r HEAD | grep -q "^days/.*\.md$"; then
+    echo "Post-commit: Detected changes in days/ directory from last commit."
+    echo "Updating README.md..."
+    
+    # Run the update script
+    python3 update_readme.py
+    
+    # Check if README.md was modified and needs to be committed
+    if git diff --quiet README.md 2>/dev/null; then
+        echo "README.md is already up to date."
+    else
+        echo "README.md has been updated. Consider committing the changes:"
+        echo "  git add README.md"
+        echo "  git commit -m 'Auto-update README.md'"
+    fi
+fi
+
+exit 0
