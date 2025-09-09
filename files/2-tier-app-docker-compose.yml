@@ -1,0 +1,21 @@
+services:
+    web:
+        image: php:apache
+        container_name: php_web
+        ports:
+            - 6400:80
+        volumes:
+            - /var/www/html:/var/www/html
+    
+    db:
+        image: mariadb:latest
+        container_name: mysql_web
+        ports:
+            - 3306:3306
+        volumes:
+            - /var/lib/mysql:/var/lib/mysql
+        environment:
+            - MARIADB_DATABASE=database_web
+            - MARIADB_USER=kkloud
+            - MARIADB_PASSWORD=your-user-password
+            - MARIADB_ROOT_PASSWORD=your-root-password
