@@ -54,3 +54,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 044 | Creating a Docker Compose File | [Link](./days/044.md) |
 | 045 | Resolve Dockerfile Issues | [Link](./days/045.md) |
 | 046 | Deploy an App on Docker Containers | [Link](./days/046.md) |
+| 047 | Docker Python App | [Link](./days/047.md) |
