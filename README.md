@@ -55,3 +55,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 045 | Resolve Dockerfile Issues | [Link](./days/045.md) |
 | 046 | Deploy an App on Docker Containers | [Link](./days/046.md) |
 | 047 | Docker Python App | [Link](./days/047.md) |
+| 048 | Deploy Pods in Kubernetes Cluster | [Link](./days/048.md) |
