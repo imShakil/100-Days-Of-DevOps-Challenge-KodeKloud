@@ -59,3 +59,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 049 | Deploy Applications with Kubernetes Deployments | [Link](./days/049.md) |
 | 050 | Set Resource Limits in Kubernetes Cluster | [Link](./days/050.md) |
 | 051 | Execute Rolling Updates in Kubernetes | [Link](./days/051.md) |
+| 052 | Execute Rollback in Kubernetes Cluster | [Link](./days/052.md) |
