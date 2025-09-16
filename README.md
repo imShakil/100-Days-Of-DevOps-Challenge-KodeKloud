@@ -60,3 +60,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 050 | Set Resource Limits in Kubernetes Cluster | [Link](./days/050.md) |
 | 051 | Execute Rolling Updates in Kubernetes | [Link](./days/051.md) |
 | 052 | Execute Rollback in Kubernetes Cluster | [Link](./days/052.md) |
+| 053 | Resolve VolumeMounts Issue in Kubernetes | [Link](./days/053.md) |
