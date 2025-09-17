@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx-replicaset-t3q4
+  labels:
+    app: nginx_app_t3q4
+    type: front-end-t3q4
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: front-end-t3q4
+  template:
+    metadata:
+      labels:
+        app: front-end-t3q4
+    spec:
+      containers:
+      - name: nginx-container-t3q4
+        image: nginx:latest

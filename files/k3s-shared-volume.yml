@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: volume-share-nautilus
+  labels:
+    app: fedora_app
+    type: fedora
+spec:
+  containers:
+    - name: volume-container-nautilus-1
+      image: fedora:latest
+      command: ["/bin/sh", "-c", "while true; do sleep 10; done"]
+      volumeMounts:
+        - name: volume-share
+          mountPath: /tmp/news
+      resources:
+        requests:
+          cpu: 100m
+          memory: 100Mi
+        limits:
+          cpu: 500m
+          memory: 500Mi
+    - name: volume-container-nautilus-2
+      image: fedora:latest
+      command: ["/bin/sh", "-c", "while true; do sleep 10; done"]
+      volumeMounts:
+        - name: volume-share
+          mountPath: /tmp/demo
+      resources:
+        requests:
+          cpu: 100m
+          memory: 100Mi
+        limits:
+          cpu: 100m
+          memory: 500Mi
+  volumes:
+    - name: volume-share
+      emptyDir: {}
