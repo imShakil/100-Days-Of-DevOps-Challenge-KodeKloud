@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: print-envars-greeting
+  labels:
+    app: print-envars-greeting
+spec:
+  restartPolicy: Never
+  containers:
+    - name: print-env-container
+      image: bash:latest
+      command: ["/bin/sh", "-c", 'echo "$(GREETING) $(COMPANY) $(GROUP)"']
+      env:
+        - name: GREETING
+          value: "Welcome to"
+        - name: COMPANY
+          value: "xFusionCorp"
+        - name: GROUP
+          value: "Group"
+      resources:
+        limits:
+          memory: "128Mi"
+          cpu: "100m"
+        requests:
+          memory: "64Mi"
+          cpu: "100m"

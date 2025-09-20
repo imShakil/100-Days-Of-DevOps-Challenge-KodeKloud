@@ -64,3 +64,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 054 | Kubernetes Shared Volumes | [Link](./days/054.md) |
 | 055 | Kubernetes Sidecar Containers | [Link](./days/055.md) |
 | 056 | Deploy Nginx Web Server on Kubernetes Cluster | [Link](./days/056.md) |
+| 057 | Print Environment Variables | [Link](./days/057.md) |
