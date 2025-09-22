@@ -66,3 +66,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 056 | Deploy Nginx Web Server on Kubernetes Cluster | [Link](./days/056.md) |
 | 057 | Print Environment Variables | [Link](./days/057.md) |
 | 058 | Deploy Grafana on Kubernetes Cluster | [Link](./days/058.md) |
+| 059 | Troubleshoot Deployment Issues in Kubernetes | [Link](./days/059.md) |
