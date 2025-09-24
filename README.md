@@ -68,3 +68,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 058 | Deploy Grafana on Kubernetes Cluster | [Link](./days/058.md) |
 | 059 | Troubleshoot Deployment Issues in Kubernetes | [Link](./days/059.md) |
 | 060 | Persistent Volumes in Kubernetes | [Link](./days/060.md) |
+| 061 | Init Containers in Kubernetes | [Link](./days/061.md) |
