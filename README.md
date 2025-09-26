@@ -70,3 +70,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 060 | Persistent Volumes in Kubernetes | [Link](./days/060.md) |
 | 061 | Init Containers in Kubernetes | [Link](./days/061.md) |
 | 062 | Manage Secrets in Kubernetes | [Link](./days/062.md) |
+| 063 | Deploy Iron Gallery App on Kubernetes | [Link](./days/063.md) |
