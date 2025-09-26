@@ -69,3 +69,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 059 | Troubleshoot Deployment Issues in Kubernetes | [Link](./days/059.md) |
 | 060 | Persistent Volumes in Kubernetes | [Link](./days/060.md) |
 | 061 | Init Containers in Kubernetes | [Link](./days/061.md) |
+| 062 | Manage Secrets in Kubernetes | [Link](./days/062.md) |
