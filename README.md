@@ -72,3 +72,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 062 | Manage Secrets in Kubernetes | [Link](./days/062.md) |
 | 063 | Deploy Iron Gallery App on Kubernetes | [Link](./days/063.md) |
 | 064 | Fix Python App Deployed on Kubernetes Cluster | [Link](./days/064.md) |
+| 065 | Deploy Redis Deployment on Kubernetes | [Link](./days/065.md) |
