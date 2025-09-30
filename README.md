@@ -28,13 +28,13 @@ This repository contains comprehensive solutions and detailed explanations for t
 4. Follow the daily challenges in order
 5. Share your progress using `#100DaysOfDevOps`
 
-> 💡 **Want to start the official challenge?** Use this [KodeKloud link](https://linkly.link/2CeSH) - it helps support this project!
+> **Want to start the official challenge?** Use this [KodeKloud link](https://linkly.link/2CeSH) - it helps support this project!
 
-## 📅 Challenge Progress
+## Challenge Progress
 
-![67%](https://progress-bar.xyz/67)
+![067%](https://progress-bar.xyz/067)
 
-### 📊 Learning Modules
+### Learning Modules
 
 | Module | Days | Topics Covered | Status |
 |--------|------|----------------|--------|
@@ -44,7 +44,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | **Kubernetes** | 48-67 | Pods, deployments, volumes, troubleshooting | ✅ Complete |
 | **CI/CD, IaC, Automation** | 68-100 | Jenkins, Terraform, Ansible | ⏳ In Progress |
 
-### 📈 Daily Challenges
+### Daily Challenges
 
 |Day|Challenge|Topics|Solution|
 |---|---------|------|--------|
@@ -116,7 +116,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 066 | Deploy MySQL on Kubernetes | Kubernetes, Docker | [Solution](./days/066.md) |
 | 067 | Deploy Guest Book App on Kubernetes | Kubernetes, Docker | [Solution](./days/067.md) |
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Basic Linux knowledge** - Command line familiarity
 - **Text editor** - vim, nano, or VS Code

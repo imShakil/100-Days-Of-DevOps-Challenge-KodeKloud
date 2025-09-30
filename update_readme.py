@@ -27,7 +27,71 @@ def extract_day_number(filename):
     """Extract day number from filename (e.g., '001.md' -> '001')."""
     return os.path.splitext(filename)[0]
 
-def generate_readme_content():
+def extract_topics_from_heading(heading):
+    """Extract topics from heading based on keywords."""
+    topics_map = {
+        'Linux': ['Linux', 'User', 'SSH', 'Shell', 'Server', 'Administration'],
+        'Docker': ['Docker', 'Container', 'Image', 'Kubernetes'],
+        'Kubernetes': ['Kubernetes', 'Pod', 'Orchestration', 'Deployment', 'Deploy', 'Service', 'Cluster', 'Docker'],
+        'Git': ['Git', 'Repository', 'Branch', 'Merge', 'Clone', 'Fork'],
+        'Database': ['Database', 'MySQL', 'PostgreSQL', 'MariaDB', 'Redis'],
+        'Networking': ['Network', 'Port', 'Load Balancer', 'SSL', 'Nginx'],
+        'Ansible': ['Ansible', 'Automation'],
+        'IaC': ['Terraform', 'IaC', 'Infrastructure as Code', 'Pulumi', 'CloudFormation'],
+        'CI/CD': ['CI/CD', 'Continuous Integration', 'Continuous Deployment', 'Jenkins', 'Travis CI', 'CircleCI', 'GitHub Actions', 'GitLab CI', 'Azure Pipelines', 'Drone', 'TeamCity', 'Bamboo', 'Jenkins', 'GitLab CI', 'Azure Pipelines', 'Drone', 'TeamCity', 'Bamboo', 'ArgoCD', 'Argo Rollouts', 'Argo Events', 'Argo Workflows', 'Argo CD', 'Argo Rollouts', 'Argo Events', 'Argo Workflows', 'ArgoCD', 'Argo Rollouts', 'Argo Events', 'Argo Workflows'],
+        'Monitoring': ['prometheous', 'grafana', 'loki'],
+        'Security': ['Security', 'SSL', 'SSH', 'Root Access']
+    }
+    
+    heading_lower = heading.lower()
+    matched_topics = []
+    
+    for topic, keywords in topics_map.items():
+        if any(keyword.lower() in heading_lower for keyword in keywords):
+            matched_topics.append(topic.title())
+    
+    return ', '.join(matched_topics) if matched_topics else 'General'
+
+def update_progress(progress):
+    """Update the progress in the README.md"""
+    with open('README.md', 'r', encoding='utf-8') as file:
+        content = file.read()
+    
+    # Find and replace the progress line
+    pattern = r'!\[\d+%\]\(https://progress-bar\.xyz/\d+\)'
+    replacement = f'![{progress}%](https://progress-bar.xyz/{progress})'
+    updated_content = re.sub(pattern, replacement, content)
+    
+    with open('README.md', 'w', encoding='utf-8') as file:
+        file.write(updated_content)
+
+def update_daily_challenge(new_challenge, day_number):
+    """Update the README.md with new daily challenge file in the days directory."""
+    with open('README.md', 'r', encoding='utf-8') as file:
+        content = file.read()
+
+    # Check if this day already exists in the table
+    if f"| {day_number} |" in content:
+        print(f"Day {day_number} already exists in README.md")
+        return
+
+    # Find the position just before "## Prerequisites"
+    prerequisites_pos = content.find('## Prerequisites')
+    if prerequisites_pos == -1:
+        prerequisites_pos = content.find('## Prerequisites')
+    
+    if prerequisites_pos != -1:
+        # Insert the new challenge before Prerequisites section
+        updated_content = content[:prerequisites_pos-1] + new_challenge + '\n' + content[prerequisites_pos:]
+        
+        with open('README.md', 'w', encoding='utf-8') as file:
+            file.write(updated_content)
+        print(f"Added new challenge entry for day {day_number}")
+    else:
+        print("Could not find Prerequisites section to insert challenge")
+
+
+def update_readme():
     """Generate the complete README.md content."""
     # Get the days directory path
     days_dir = Path('days')
@@ -40,48 +104,14 @@ def generate_readme_content():
     
     # Sort files by filename (this will sort 001.md, 002.md, etc. correctly)
     md_files.sort(key=lambda x: x.name)
-    
-    # Start building the README content
-    readme_content = "# 100 Days of DevOps [KodeKloud]\n\n"
-    readme_content += "This repository contains solutions for the 100 Days of DevOps challenge.\n\n"
-    readme_content += "> Wanna start yourself? Follow this [reference link](https://linkly.link/2CeSH). It will give me a small gift of kodekloud points. \n\n"
-    readme_content += "## Table of Contents\n\n"
-    readme_content += "|Days|Task|Solved|\n"
-    readme_content += "|---|---|---|\n"
-    
-    # Process each file
-    for file_path in md_files:
-        day_number = extract_day_number(file_path.name)
-        heading = extract_main_heading(file_path)
-        
-        if heading:
-            # Create the table row
-            link = f"[Link](./days/{file_path.name})"
-            readme_content += f"| {day_number} | {heading} | {link} |\n"
-        else:
-            print(f"Warning: Could not extract heading from {file_path}")
-    
-    return readme_content
+    heading = extract_main_heading(md_files[-1])
+    link = f"[Solution](./days/{md_files[-1].name})"
+    day_number = extract_day_number(md_files[-1].name)
+    topics = extract_topics_from_heading(heading)
+    new_challenge = f"| {day_number} | {heading} | {topics} | {link} |\n"
 
-def update_readme():
-    """Update the README.md file in the days directory."""
-    readme_path = Path('README.md')
-    
-    try:
-        # Generate new content
-        new_content = generate_readme_content()
-        
-        # Write to README.md
-        with open(readme_path, 'w', encoding='utf-8') as file:
-            file.write(new_content)
-        
-        print(f"Successfully updated {readme_path}")
-        print("\nGenerated content:")
-        print("-" * 50)
-        print(new_content)
-        
-    except Exception as e:
-        print(f"Error updating README.md: {e}")
+    update_progress(day_number)
+    update_daily_challenge(new_challenge, day_number)
 
 if __name__ == "__main__":
     # Check if we're in the right directory
