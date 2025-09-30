@@ -74,3 +74,4 @@ This repository contains solutions for the 100 Days of DevOps challenge.
 | 064 | Fix Python App Deployed on Kubernetes Cluster | [Link](./days/064.md) |
 | 065 | Deploy Redis Deployment on Kubernetes | [Link](./days/065.md) |
 | 066 | Deploy MySQL on Kubernetes | [Link](./days/066.md) |
+| 067 | Deploy Guest Book App on Kubernetes | [Link](./days/067.md) |
