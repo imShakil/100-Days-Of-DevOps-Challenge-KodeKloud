@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![067%](https://progress-bar.xyz/067)
+![068%](https://progress-bar.xyz/068)
 
 ### Learning Modules
 
@@ -115,6 +115,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 065 | Deploy Redis Deployment on Kubernetes | Kubernetes, Docker | [Solution](./days/065.md) |
 | 066 | Deploy MySQL on Kubernetes | Kubernetes, Docker | [Solution](./days/066.md) |
 | 067 | Deploy Guest Book App on Kubernetes | Kubernetes, Docker | [Solution](./days/067.md) |
+| 068 | Set Up Jenkins Server | Linux, Ci/Cd | [Solution](./days/068.md) |
 
 ## Prerequisites
 
