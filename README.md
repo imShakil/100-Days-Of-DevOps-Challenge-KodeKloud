@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![069%](https://progress-bar.xyz/069)
+![070%](https://progress-bar.xyz/070)
 
 ### Learning Modules
 
@@ -117,6 +117,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 067 | Deploy Guest Book App on Kubernetes | Kubernetes, Docker | [Solution](./days/067.md) |
 | 068 | Set Up Jenkins Server | Linux, Ci/Cd | [Solution](./days/068.md) |
 | 069 | Install Jenkins Plugins | Ci/Cd | [Solution](./days/069.md) |
+| 070 | Configure Jenkins User Access | Linux, Ci/Cd | [Solution](./days/070.md) |
 
 ## Prerequisites
 
