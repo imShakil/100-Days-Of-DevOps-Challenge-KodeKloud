@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![068%](https://progress-bar.xyz/068)
+![069%](https://progress-bar.xyz/069)
 
 ### Learning Modules
 
@@ -116,6 +116,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 066 | Deploy MySQL on Kubernetes | Kubernetes, Docker | [Solution](./days/066.md) |
 | 067 | Deploy Guest Book App on Kubernetes | Kubernetes, Docker | [Solution](./days/067.md) |
 | 068 | Set Up Jenkins Server | Linux, Ci/Cd | [Solution](./days/068.md) |
+| 069 | Install Jenkins Plugins | Ci/Cd | [Solution](./days/069.md) |
 
 ## Prerequisites
 
