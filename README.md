@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![070%](https://progress-bar.xyz/070)
+![071%](https://progress-bar.xyz/071)
 
 ### Learning Modules
 
@@ -118,6 +118,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 068 | Set Up Jenkins Server | Linux, Ci/Cd | [Solution](./days/068.md) |
 | 069 | Install Jenkins Plugins | Ci/Cd | [Solution](./days/069.md) |
 | 070 | Configure Jenkins User Access | Linux, Ci/Cd | [Solution](./days/070.md) |
+| 071 | Configure Jenkins Job for Package Installation | Ci/Cd | [Solution](./days/071.md) |
 
 ## Prerequisites
 
@@ -224,7 +225,7 @@ If this repository helped you in your DevOps journey:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Connect
+## 🔗 Connect With Me
 
 - **GitHub**: [@imshakil](https://github.com/imshakil)
 - **LinkedIn**: [Connect with me](https://linkedin.com/in/imshakil)
