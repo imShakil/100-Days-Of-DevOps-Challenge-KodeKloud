@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![072%](https://progress-bar.xyz/072)
+![073%](https://progress-bar.xyz/073)
 
 ### Learning Modules
 
@@ -120,6 +120,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 070 | Configure Jenkins User Access | Linux, Ci/Cd | [Solution](./days/070.md) |
 | 071 | Configure Jenkins Job for Package Installation | Ci/Cd | [Solution](./days/071.md) |
 | 072 | Jenkins Scheduled Jobs | Ci/Cd | [Solution](./days/072.md) |
+| 073 | Jenkins Scheduled Jobs | Ci/Cd | [Solution](./days/073.md) |
 
 ## Prerequisites
 
