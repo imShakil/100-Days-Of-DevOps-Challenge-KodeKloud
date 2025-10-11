@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![073%](https://progress-bar.xyz/073)
+![074%](https://progress-bar.xyz/074)
 
 ### Learning Modules
 
@@ -121,6 +121,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 071 | Configure Jenkins Job for Package Installation | Ci/Cd | [Solution](./days/071.md) |
 | 072 | Jenkins Scheduled Jobs | Ci/Cd | [Solution](./days/072.md) |
 | 073 | Jenkins Scheduled Jobs | Ci/Cd | [Solution](./days/073.md) |
+| 074 | Jenkins Database Backup Job | Database, Ci/Cd | [Solution](./days/074.md) |
 
 ## Prerequisites
 
