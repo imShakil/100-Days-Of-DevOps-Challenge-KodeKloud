@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![074%](https://progress-bar.xyz/074)
+![075%](https://progress-bar.xyz/075)
 
 ### Learning Modules
 
@@ -122,6 +122,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 072 | Jenkins Scheduled Jobs | Ci/Cd | [Solution](./days/072.md) |
 | 073 | Jenkins Scheduled Jobs | Ci/Cd | [Solution](./days/073.md) |
 | 074 | Jenkins Database Backup Job | Database, Ci/Cd | [Solution](./days/074.md) |
+| 075 | Jenkins Slave Nodes | Ci/Cd | [Solution](./days/075.md) |
 
 ## Prerequisites
 
