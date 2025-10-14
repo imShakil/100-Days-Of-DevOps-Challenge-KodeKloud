@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![077%](https://progress-bar.xyz/077)
+![078%](https://progress-bar.xyz/078)
 
 ### Learning Modules
 
@@ -125,6 +125,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 075 | Jenkins Slave Nodes | Ci/Cd | [Solution](./days/075.md) |
 | 076 | Jenkins Project Security | Ci/Cd, Security | [Solution](./days/076.md) |
 | 077 | Jenkins Deploy Pipeline | Kubernetes, Ci/Cd | [Solution](./days/077.md) |
+| 078 | Jenkins Conditional Pipeline | Ci/Cd | [Solution](./days/078.md) |
 
 ## Prerequisites
 
