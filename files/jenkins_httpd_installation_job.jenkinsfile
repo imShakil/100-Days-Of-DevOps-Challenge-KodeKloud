@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('package_install') {
+            steps {
+                script {
+                    def remote = [:]
+                    remote.name = "stapp"
+                    remote.host = "${HOSTNAME}"
+                    remote.user = "${USER}"
+                    remote.password = "${PASSWORD}"
+                    remote.allowAnyHosts = true
+                    
+                    sshCommand remote: remote, command: "echo '${PASSWORD}' | sudo -S yum install -y ${PACKAGE}"
+                    sshCommand remote: remote, command: "echo '${PASSWORD}' | sudo -S sed -i 's/Listen 80/Listen 8080/' /etc/httpd/conf/httpd.conf"
+                    sshCommand remote: remote, command: "echo '${PASSWORD}' | sudo -S systemctl enable httpd"
+                    sshCommand remote: remote, command: "echo '${PASSWORD}' | sudo -S systemctl start httpd"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    
+    triggers {
+        pollSCM('H/2 * * * *')
+    }
+    
+    stages {
+        stage('Deploy') {
+            steps {
+                script {
+                    def remote = [:]
+                    remote.host = "ststor01"
+                    remote.user = "sarah"
+                    remote.password = "Sarah_pass123"
+                    remote.allowAnyHosts = true
+                    
+                    sshCommand remote: remote, command: "echo 'Sarah_pass123' | sudo -S chown -R sarah:sarah /var/www/html"
+                    sshCommand remote: remote, command: "cd /home/sarah/web && git pull origin master"
+                    sshCommand remote: remote, command: "cp -r /home/sarah/web/* /var/www/html/"
+                }
+            }
+        }
+    }
+}
