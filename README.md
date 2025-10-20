@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![085%](https://progress-bar.xyz/085)
+![086%](https://progress-bar.xyz/086)
 
 ### Learning Modules
 
@@ -133,6 +133,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 083 | Troubleshoot and Create Ansible Playbook | Ansible | [Solution](./days/083.md) |
 | 084 | Copy Data to App Servers using Ansible | Linux, Ansible | [Solution](./days/084.md) |
 | 085 | Create Files on App Servers using Ansible | Linux, Ansible | [Solution](./days/085.md) |
+| 086 | Ansible Ping Module Usage | Ansible | [Solution](./days/086.md) |
 
 ## Prerequisites
 
