@@ -1,0 +1,11 @@
+- name: Samba Package Installation
+  hosts: all
+  become: true
+  tasks:
+    - name: Install Samba Package to All Servers
+      ansible.builtin.yum:
+        name: samba
+        state: present
+
+# yum has been replaced with dnf in the latest version
+# but for this lab, we have to use yum
