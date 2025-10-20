@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![079%](https://progress-bar.xyz/079)
+![080%](https://progress-bar.xyz/080)
 
 ### Learning Modules
 
@@ -127,6 +127,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 077 | Jenkins Deploy Pipeline | Kubernetes, Ci/Cd | [Solution](./days/077.md) |
 | 078 | Jenkins Conditional Pipeline | Ci/Cd | [Solution](./days/078.md) |
 | 079 | Jenkins Deployment Job | Kubernetes, Ci/Cd | [Solution](./days/079.md) |
+| 080 | Jenkins Chained Builds | Ci/Cd | [Solution](./days/080.md) |
 
 ## Prerequisites
 
