@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![081%](https://progress-bar.xyz/081)
+![082%](https://progress-bar.xyz/082)
 
 ### Learning Modules
 
@@ -129,6 +129,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 079 | Jenkins Deployment Job | Kubernetes, Ci/Cd | [Solution](./days/079.md) |
 | 080 | Jenkins Chained Builds | Ci/Cd | [Solution](./days/080.md) |
 | 081 | Jenkins Chained Builds | Ci/Cd | [Solution](./days/081.md) |
+| 082 | Create Ansible Inventory for App Server Testing | Linux, Ansible | [Solution](./days/082.md) |
 
 ## Prerequisites
 
