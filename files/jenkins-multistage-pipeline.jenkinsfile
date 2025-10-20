@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+
+    environment {
+        GIT_REPO = 'http://git.stratos.xfusioncorp.com/sarah/web.git'
+        REMOTE_HOST = 'ststor01.stratos.xfusioncorp.com'
+        REMOTE_PATH = '/var/www/html'
+    }
+
+    stages {
+        stage('Deploy') {
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: 'ststor01', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
+                        sh """
+                        sshpass -p "$PASS" ssh -o StrictHostKeyChecking=no $USER@$REMOTE_HOST "cd $REMOTE_PATH && git pull"
+                        """
+                    }
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'curl -f http://stlb01:8091'
+            }
+        }
+    }
+}
