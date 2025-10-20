@@ -1,0 +1,10 @@
+- name: Copy Files with Ownership
+  hosts: app
+  tasks:
+    - name: Copy files to each server
+      ansible.builtin.file:
+        path: /tmp/nfsshare.txt
+        state: touch
+        owner: '{{ ansible_user }}'
+        group: '{{ ansible_user }}'
+        mode: '0644'
