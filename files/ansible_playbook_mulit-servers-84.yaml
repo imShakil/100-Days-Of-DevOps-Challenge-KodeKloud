@@ -1,0 +1,9 @@
+- name: Copy Data to App Servers
+  hosts: app
+  become: true
+  tasks:
+    - name: Copy index.html to all servers
+      ansible.builtin.copy:
+        src: /usr/src/sysops/index.html
+        dest: /opt/sysops
+        mode: '0644'

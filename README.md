@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![083%](https://progress-bar.xyz/083)
+![084%](https://progress-bar.xyz/084)
 
 ### Learning Modules
 
@@ -131,6 +131,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 081 | Jenkins Chained Builds | Ci/Cd | [Solution](./days/081.md) |
 | 082 | Create Ansible Inventory for App Server Testing | Linux, Ansible | [Solution](./days/082.md) |
 | 083 | Troubleshoot and Create Ansible Playbook | Ansible | [Solution](./days/083.md) |
+| 084 | Copy Data to App Servers using Ansible | Linux, Ansible | [Solution](./days/084.md) |
 
 ## Prerequisites
 
