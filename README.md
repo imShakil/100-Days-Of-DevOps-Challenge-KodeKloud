@@ -119,7 +119,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 069 | Install Jenkins Plugins | Ci/Cd | [Solution](./days/069.md) |
 | 070 | Configure Jenkins User Access | Linux, Ci/Cd | [Solution](./days/070.md) |
 | 071 | Configure Jenkins Job for Package Installation | Ci/Cd | [Solution](./days/071.md) |
-| 072 | Jenkins Scheduled Jobs | Ci/Cd | [Solution](./days/072.md) |
+| 072 | Jenkins Parameterized Builds | Ci/Cd | [Solution](./days/072.md) |
 | 073 | Jenkins Scheduled Jobs | Ci/Cd | [Solution](./days/073.md) |
 | 074 | Jenkins Database Backup Job | Database, Ci/Cd | [Solution](./days/074.md) |
 | 075 | Jenkins Slave Nodes | Ci/Cd | [Solution](./days/075.md) |
@@ -128,7 +128,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 078 | Jenkins Conditional Pipeline | Ci/Cd | [Solution](./days/078.md) |
 | 079 | Jenkins Deployment Job | Kubernetes, Ci/Cd | [Solution](./days/079.md) |
 | 080 | Jenkins Chained Builds | Ci/Cd | [Solution](./days/080.md) |
-| 081 | Jenkins Chained Builds | Ci/Cd | [Solution](./days/081.md) |
+| 081 | Jenkins Multistage Pipeline | Ci/Cd | [Solution](./days/081.md) |
 | 082 | Create Ansible Inventory for App Server Testing | Linux, Ansible | [Solution](./days/082.md) |
 | 083 | Troubleshoot and Create Ansible Playbook | Ansible | [Solution](./days/083.md) |
 | 084 | Copy Data to App Servers using Ansible | Linux, Ansible | [Solution](./days/084.md) |
