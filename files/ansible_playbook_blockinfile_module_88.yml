@@ -1,0 +1,29 @@
+- name: Ansible blockinfile module
+  hosts: all
+  become: true
+  tasks:
+    - name: install httpd
+      ansible.builtin.yum:
+        name: httpd
+        state: present
+    - name: Start Service
+      ansible.builtin.service:
+        name: httpd
+        state: started
+    - name: Create index.html file
+      ansible.builtin.file:
+        path: /var/www/html/index.html
+        state: touch
+        owner: apache
+        group: apache
+        mode: '0644'
+    - name: Add HTML Content
+      ansible.builtin.blockinfile:
+        path: /var/www/html/index.html
+        owner: apache
+        group: apache
+        mode: '0644'
+        block: |
+          <h1>Welcome to XfusionCorp!</h1>
+          <p>This is  Nautilus sample file, created using Ansible!</p>
+          <p>Please do not modify this file manually!</p>

@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![087%](https://progress-bar.xyz/087)
+![088%](https://progress-bar.xyz/088)
 
 ### Learning Modules
 
@@ -135,6 +135,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 085 | Create Files on App Servers using Ansible | Linux, Ansible | [Solution](./days/085.md) |
 | 086 | Ansible Ping Module Usage | Ansible | [Solution](./days/086.md) |
 | 087 | Ansible Install Package | Ansible | [Solution](./days/087.md) |
+| 088 | Ansible Blockinfile Module | Ansible | [Solution](./days/088.md) |
 
 ## Prerequisites
 
