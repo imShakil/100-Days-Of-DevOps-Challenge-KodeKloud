@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![088%](https://progress-bar.xyz/088)
+![089%](https://progress-bar.xyz/089)
 
 ### Learning Modules
 
@@ -136,6 +136,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 086 | Ansible Ping Module Usage | Ansible | [Solution](./days/086.md) |
 | 087 | Ansible Install Package | Ansible | [Solution](./days/087.md) |
 | 088 | Ansible Blockinfile Module | Ansible | [Solution](./days/088.md) |
+| 089 | Ansible Manage Services | Kubernetes, Ansible | [Solution](./days/089.md) |
 
 ## Prerequisites
 

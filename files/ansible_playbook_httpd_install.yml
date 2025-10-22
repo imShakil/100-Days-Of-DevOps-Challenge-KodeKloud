@@ -1,0 +1,13 @@
+- name: Ansible Manage Services 089
+  hosts: all
+  become: true
+  tasks:
+    - name: Install httpd
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+    - name: Start and Enabled Service
+      ansible.builtin.service:
+        name: httpd
+        state: started
+        enabled: true
