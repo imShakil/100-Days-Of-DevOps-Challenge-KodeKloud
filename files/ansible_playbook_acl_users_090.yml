@@ -1,0 +1,49 @@
+- name: Managing ACLs Using Ansible on Server 1
+  hosts: stapp01
+  become: true
+  tasks:
+    - name: Create an empty file
+      ansible.builtin.file:
+        path: /opt/devops/blog.txt
+        state: touch
+        mode: '0644'
+    - name: Give acl permission
+      ansible.posix.acl:
+        path: /opt/devops/blog.txt
+        entity: tony
+        etype: group
+        permissions: r
+        state: present
+
+- name: Managing ACLs Using Ansible on App Server 2
+  hosts: stapp02
+  become: true
+  tasks:
+    - name: Create an empty file
+      ansible.builtin.file:
+        path: /opt/devops/story.txt
+        state: touch
+        mode: '0644'
+    - name: Give acl permission
+      ansible.posix.acl:
+        path: /opt/devops/story.txt
+        entity: steve
+        etype: user
+        permissions: rw
+        state: present
+- name: Managing ACLs Using Ansible on App Server 3
+  hosts: stapp03
+  become: true
+  tasks:
+    - name: Create an empty file
+      ansible.builtin.file:
+        path: /opt/devops/media.txt
+        state: touch
+        mode: '0644'
+    - name: Give acl permission
+      ansible.posix.acl:
+        path: /opt/devops/media.txt
+        entity: banner
+        etype: group
+        permissions: rw
+        state: present

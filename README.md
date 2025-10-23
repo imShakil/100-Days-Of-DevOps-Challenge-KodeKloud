@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![089%](https://progress-bar.xyz/089)
+![090%](https://progress-bar.xyz/090)
 
 ### Learning Modules
 
@@ -137,6 +137,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 087 | Ansible Install Package | Ansible | [Solution](./days/087.md) |
 | 088 | Ansible Blockinfile Module | Ansible | [Solution](./days/088.md) |
 | 089 | Ansible Manage Services | Kubernetes, Ansible | [Solution](./days/089.md) |
+| 090 | Managing ACLs Using Ansible | Ansible | [Solution](./days/090.md) |
 
 ## Prerequisites
 
