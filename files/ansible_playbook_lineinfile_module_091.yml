@@ -1,0 +1,41 @@
+- name: Installing httpd and starting service
+  hosts: all
+  become: true
+  tasks:
+    - name: Install httpd
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+    - name: Start httpd service
+      ansible.builtin.service:
+        name: httpd
+        state: started
+        enabled: true
+
+- name: Creating index.html file
+  hosts: all
+  become: true
+  tasks:
+    - name: Create an emppty file
+      ansible.builtin.file:
+        path: /var/www/html/index.html
+        state: touch
+        mode: '06444'
+    - name: Add HTML content
+      ansible.builtin.copy:
+        dest: /var/www/html/index.html
+        content: "<p> This is a Nautilus sample file, created using Ansible! <p>"
+        mode: '0644'
+
+- name: Update index.html with lineinfile
+  hosts: all
+  become: true
+  tasks:
+    - name: Add h1 tag at top of index.html file
+      ansible.builtin.lineinfile:
+        path: /var/www/html/index.html
+        insertbefore: BOF
+        line: '<h1> Welcome to xFusionCorp Industries!</h1>'
+        mode: '0755'
+        owner: apache
+        group: apache
