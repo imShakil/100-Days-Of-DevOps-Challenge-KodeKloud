@@ -1,0 +1,31 @@
+- name: Using Ansible Conditions
+  hosts: all
+  become: true
+  tasks:
+    - name: Show hostname for debugging
+      ansible.builtin.debug:
+        msg: "Hostname is: {{ ansible_hostname }}"
+    - name: Copy for server 1
+      ansible.builtin.copy:
+        src: /usr/src/itadmin/blog.txt
+        dest: /opt/itadmin
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: '0655'
+      when: ansible_hostname == "stapp01"
+    - name: Copy for server 2
+      ansible.builtin.copy:
+        src: /usr/src/itadmin/story.txt
+        dest: /opt/itadmin
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: '0655'
+      when: ansible_hostname == "stapp02"
+    - name: Copy for server 3
+      ansible.builtin.copy:
+        src: /usr/src/itadmin/media.txt
+        dest: /opt/itadmin
+        owner: "{{ ansible_user }}"
+        group: "{{ ansible_user }}"
+        mode: '0655'
+      when: ansible_hostname == "stapp03"
