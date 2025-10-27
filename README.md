@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![092%](https://progress-bar.xyz/092)
+![093%](https://progress-bar.xyz/093)
 
 ### Learning Modules
 
@@ -140,6 +140,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 090 | Managing ACLs Using Ansible | Ansible | [Solution](./days/090.md) |
 | 091 | Ansible Lineinfile Module | Ansible | [Solution](./days/091.md) |
 | 092 | Managing Jinja2 Templates Using Ansible | Ansible | [Solution](./days/092.md) |
+| 093 | Using Ansible Conditions | Ansible | [Solution](./days/093.md) |
 
 ## Prerequisites
 
