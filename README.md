@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![094%](https://progress-bar.xyz/094)
+![095%](https://progress-bar.xyz/095)
 
 ### Learning Modules
 
@@ -142,6 +142,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 092 | Managing Jinja2 Templates Using Ansible | Ansible | [Solution](./days/092.md) |
 | 093 | Using Ansible Conditions | Ansible | [Solution](./days/093.md) |
 | 094 | Create VPC Using Terraform | Iac | [Solution](./days/094.md) |
+| 095 | Create Security Group Using Terraform | Iac, Security | [Solution](./days/095.md) |
 
 ## Prerequisites
 
