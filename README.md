@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![095%](https://progress-bar.xyz/095)
+![096%](https://progress-bar.xyz/096)
 
 ### Learning Modules
 
@@ -143,6 +143,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 093 | Using Ansible Conditions | Ansible | [Solution](./days/093.md) |
 | 094 | Create VPC Using Terraform | Iac | [Solution](./days/094.md) |
 | 095 | Create Security Group Using Terraform | Iac, Security | [Solution](./days/095.md) |
+| 096 | Create EC2 Instance Using Terraform | Iac | [Solution](./days/096.md) |
 
 ## Prerequisites
 
