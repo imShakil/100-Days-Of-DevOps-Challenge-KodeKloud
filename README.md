@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![097%](https://progress-bar.xyz/097)
+![098%](https://progress-bar.xyz/098)
 
 ### Learning Modules
 
@@ -145,6 +145,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 095 | Create Security Group Using Terraform | Iac, Security | [Solution](./days/095.md) |
 | 096 | Create EC2 Instance Using Terraform | Iac | [Solution](./days/096.md) |
 | 097 | Create IAM Policy Using Terraform | Iac | [Solution](./days/097.md) |
+| 098 | Launch EC2 in Private VPC Subnet Using Terraform | Iac | [Solution](./days/098.md) |
 
 ## Prerequisites
 
