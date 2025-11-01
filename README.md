@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![098%](https://progress-bar.xyz/098)
+![099%](https://progress-bar.xyz/099)
 
 ### Learning Modules
 
@@ -146,6 +146,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 096 | Create EC2 Instance Using Terraform | Iac | [Solution](./days/096.md) |
 | 097 | Create IAM Policy Using Terraform | Iac | [Solution](./days/097.md) |
 | 098 | Launch EC2 in Private VPC Subnet Using Terraform | Iac | [Solution](./days/098.md) |
+| 099 | Attach IAM Policy for DynamoDB Access Using Terraform | Iac | [Solution](./days/099.md) |
 
 ## Prerequisites
 
