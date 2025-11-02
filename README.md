@@ -32,7 +32,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ## Challenge Progress
 
-![099%](https://progress-bar.xyz/099)
+![100%](https://progress-bar.xyz/100)
 
 ### Learning Modules
 
@@ -42,7 +42,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | **Version Control** | 21-34 | Git workflows, branching, hooks | ✅ Complete |
 | **Containerization** | 35-47 | Docker, Docker Compose, networking | ✅ Complete |
 | **Kubernetes** | 48-67 | Pods, deployments, volumes, troubleshooting | ✅ Complete |
-| **CI/CD, IaC, Automation** | 68-100 | Jenkins, Terraform, Ansible | ⏳ In Progress |
+| **CI/CD, IaC, Automation** | 68-100 | Jenkins, Terraform, Ansible | ✅ Complete |
 
 ### Daily Challenges
 
@@ -147,6 +147,7 @@ This repository contains comprehensive solutions and detailed explanations for t
 | 097 | Create IAM Policy Using Terraform | Iac | [Solution](./days/097.md) |
 | 098 | Launch EC2 in Private VPC Subnet Using Terraform | Iac | [Solution](./days/098.md) |
 | 099 | Attach IAM Policy for DynamoDB Access Using Terraform | Iac | [Solution](./days/099.md) |
+| 100 | Create and Configure Alarm Using CloudWatch Using Terraform | Iac | [Solution](./days/100.md) |
 
 ## Prerequisites
 
