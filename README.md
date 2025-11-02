@@ -34,6 +34,12 @@ This repository contains comprehensive solutions and detailed explanations for t
 
 ![100%](https://progress-bar.xyz/100)
 
+## 🏆 Challenge Completed
+
+**Successfully completed the 100 Days of DevOps Challenge!**
+
+![certificate of completion](./screenshots/certificate-mh.jpg)
+
 ### Learning Modules
 
 | Module | Days | Topics Covered | Status |
