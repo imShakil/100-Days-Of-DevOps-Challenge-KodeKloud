@@ -1,0 +1,19 @@
+parameters {
+    string(name: 'BRANCH', defaultValue: 'master', description: 'Enter the branch to deploy (master or feature)')
+}
+
+stages {
+    stage('Deploy') {
+        steps {
+            script {
+                def branch = params.BRANCH
+                sh """
+                    rm -rf /tmp/web_app
+                    git clone -b ${branch} http://git.stratos.xfusioncorp.com/sarah/web_app.git /tmp/web_app
+                    echo 'Bl@kW' | sudo -S cp -rf /tmp/web_app/* /var/www/html/
+                    rm -rf /tmp/web_app
+                """
+            }
+        }
+    }
+}
