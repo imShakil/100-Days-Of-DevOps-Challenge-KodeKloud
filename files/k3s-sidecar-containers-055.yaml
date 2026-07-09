@@ -2,39 +2,24 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: webserver
-  labels:
-    app: webserver
 spec:
+  # The Sidecar is defined under initContainers with a RestartPolicy
+  initContainers:
+    - name: sidecar-container
+      image: ubuntu:latest
+      restartPolicy: Always #This is important part
+      command: ["sh", "-c", "while true; do cat /var/log/nginx/access.log /var/log/nginx/error.log; sleep 30; done"]
+      volumeMounts:
+        - name: shared-logs
+          mountPath: /var/log/nginx
+
   containers:
-  - name: nginx-container
-    image: nginx:latest
-    ports:
-    - containerPort: 80
-    volumeMounts:
-    - name: shared-logs
-      mountPath: /var/log/nginx
-    resources:
-      limits:
-        cpu: 100m
-        memory: 128Mi
-      requests:
-        cpu: 100m
-        memory: 128Mi
-  - name: sidecar-container
-    image: ubuntu:latest
-    command: ["sh","-c","while true; do cat /var/log/nginx/access.log /var/log/nginx/error.log; sleep 30; done"]
-    volumeMounts:
-    - name: shared-logs
-      mountPath: /var/log/nginx
-    resources:
-      limits:
-        cpu: 100m
-        memory: 128Mi
-      requests:
-        cpu: 100m
-        memory: 128Mi
+    - name: nginx-container
+      image: nginx:latest
+      volumeMounts:
+        - name: shared-logs
+          mountPath: /var/log/nginx
 
   volumes:
-  - name: shared-logs
-    emptyDir: {}
-    
+    - name: shared-logs
+      emptyDir: {}
